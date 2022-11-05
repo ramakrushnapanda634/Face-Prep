@@ -1,0 +1,290 @@
+.container {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    max-width: 4000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.search {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.list input:focus {
+    border: 1px solid #333;
+}
+
+.list button {
+    width: 100%;
+    padding: 16.5px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #5b16db;
+    color: #ffffff;
+}
+
+.list button:hover {
+    background-color: #5019c7;
+}
+
+.listHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.listHeader input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 16.5px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #4f10c4;
+    color: #FFFFFF;
+}
+
+.listHeader input:focus {
+    border: 1px solid #333;
+}
+
+.listHeader button {
+    width: 100%;
+    padding: 16.5px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #540ed5;
+    color: #ffffff;
+}
+
+.listHeader button:hover {
+    background-color: #3f129f;
+}
+
+.listHeaderItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.listBody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    row-gap: 10px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.listItemName {
+    width: 5em;
+    height: 5em;
+    background-color: #431ed8;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.listItem:hover {
+    background: linear-gradient(#3e22ce, #3814cb);
+    color: #ffffff;
+}
+
+.listItemNameText,
+.listItemPhone {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.listItemEmail {
+    font-weight: 300;
+    text-transform: lowercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1080px) {
+    .listBody {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .listBody {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .listBody {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.skeleton {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.skeleton.show {
+    opacity: 1;
+}
+
+
+.skeleton .listItemName {
+    width: 5em;
+    height: 5em;
+    background-color: #3412bb;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+
+.skeleton .listItemNameText {
+    width: 100%;
+    height: 1.5em;
+    background-color: #3611cb;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0 auto 2em auto;
+}
+
+.skeleton .listItemPhone {
+    width: 100%;
+    height: 1.5em;
+    background-color: #3b18ca;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0 auto 2em auto;
+}
+
+.skeleton .listItemEmail {
+    width: 100%;
+    height: 1.5em;
+    background-color: #3a15cf;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin: 0 auto 2em auto;
+}
+
+.skeleton .listItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+cd .skeleton .listItem:hover {
+    background: linear-gradient(#3112c9, #3411c3);
+    color: #ffffff;
+}
+
+.skeleton .listItemNameText,
+.skeleton .listItemPhone {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.skeleton .listItemEmail {
+    font-weight: 300;
+    text-transform: lowercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+
+.skeleton .listItemName {
+    width: 5em;
+    height: 5em;
+    background-color: #a993ff;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}

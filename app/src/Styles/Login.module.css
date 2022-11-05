@@ -1,0 +1,69 @@
+.container {
+    font-family: "Nunito sans", sans-serif !important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form label {
+    padding: 15px 0px 0px 0px
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+.container form input:focus {
+    border: 1px solid #333;
+}
+
+.container form button {
+    width: 100%;
+    padding: 16.5px 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #34099f;
+    color: #FFFFFF;
+}
+
+.container form button:hover {
+    background-color: #5712e2;
+}
+
+.container form a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 300px;
+    }
+}
